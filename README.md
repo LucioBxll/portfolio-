@@ -1,4 +1,5 @@
-# Portfolio Personal - Lucio Bello
+# Portfolio Personal - Lucio Boxall
+
 
 ## 📝 Descripción
 Portfolio personal desarrollado con React y Node.js, que muestra mis proyectos, habilidades y experiencia. Incluye un panel de administración para gestionar dinámicamente el contenido.
