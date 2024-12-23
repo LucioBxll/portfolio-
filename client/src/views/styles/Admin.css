@@ -1,0 +1,277 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.admin-sidebar {
+  width: 250px;
+  background-color: var(--background-dark);
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-content {
+  flex-grow: 1;
+}
+
+.admin-sidebar h2 {
+  color: #64ffda;
+  margin-bottom: 2rem;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-sidebar li {
+  margin-bottom: 1rem;
+}
+
+.admin-sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.admin-sidebar a:hover {
+  color: #64ffda;
+  background-color: rgba(100, 255, 218, 0.1);
+  border-radius: 5px;
+}
+
+.admin-content {
+  flex: 1;
+  margin-left: 250px;
+  padding: 2rem;
+  min-height: 100vh;
+  width: calc(100% - 250px);
+  background-color: var(--background-light);
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.admin-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admin-table table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+  background-color: var(--background-dark);
+  color: white;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary {
+  background-color: #64ffda;
+  color: var(--background-dark);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 0.3rem 0.8rem;
+  border: none;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #64ffda;
+  color: var(--background-dark);
+}
+
+.btn-delete {
+  background-color: #ff6464;
+  color: white;
+}
+
+.admin-form-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.admin-form {
+  background-color: var(--background-dark);
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #64ffda;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #64ffda;
+  color: #64ffda;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
+.skills-select,
+.category-select {
+  min-height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  border-radius: 5px;
+  color: white;
+  padding: 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.skills-select {
+  min-height: 150px;
+}
+
+.skills-select option,
+.category-select option {
+  padding: 8px;
+  background-color: var(--background-dark);
+}
+
+.skills-select option:checked,
+.category-select option:checked {
+  background-color: #64ffda;
+  color: var(--background-dark);
+}
+
+/* Mejora el estilo del scroll para ambos selects */
+.skills-select::-webkit-scrollbar,
+.category-select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.skills-select::-webkit-scrollbar-track,
+.category-select::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.skills-select::-webkit-scrollbar-thumb,
+.category-select::-webkit-scrollbar-thumb {
+  background-color: #64ffda;
+  border-radius: 4px;
+}
+
+/* Efecto hover para las opciones */
+.skills-select option:hover,
+.category-select option:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
+/* Estilo para el focus */
+.skills-select:focus,
+.category-select:focus {
+  outline: none;
+  border-color: #64ffda;
+  box-shadow: 0 0 0 2px rgba(100, 255, 218, 0.2);
+}
+
+.form-help {
+  display: block;
+  margin-top: 0.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+.btn-home {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64ffda;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.btn-home:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
+.btn-home i {
+  font-size: 1rem;
+}
+
+.admin-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-menu li {
+  margin-bottom: 1rem;
+}
+
+.sidebar-footer {
+  border-top: 1px solid rgba(100, 255, 218, 0.2);
+  padding-top: 1rem;
+  margin-top: auto;
+} 

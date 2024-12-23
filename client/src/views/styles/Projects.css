@@ -1,0 +1,104 @@
+.projects {
+  padding: 80px 20px;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #64ffda;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #2d2d2d;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  padding: 1rem;
+  margin: 0;
+  color: #64ffda;
+}
+
+.project-card p {
+  padding: 0 1rem;
+  color: #ccc;
+}
+
+.tech-stack {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background: #64ffda;
+  color: #1a1a1a;
+  padding: 0.25rem 0.5rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .projects h2 {
+    font-size: 2rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.project-links a {
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.project-links .cta-primary {
+  background-color: #64ffda;
+  color: #1a1a1a;
+}
+
+.project-links .cta-secondary {
+  border: 2px solid #64ffda;
+  color: #64ffda;
+}
+
+.project-links a:hover {
+  transform: translateY(-2px);
+}
